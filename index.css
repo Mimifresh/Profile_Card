@@ -2,7 +2,6 @@ body{
     margin: 0;
     font-family: "Inter", sans-serif;
     padding: 4rem 2rem;
-    width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -13,6 +12,7 @@ body{
 }
 
 h2{
+    font-size: 2rem;
     color: #b91d73;
 }
 
@@ -31,6 +31,9 @@ ul{
     background-color: #f2709c;
     color:#fff;
     border-radius: 10px;
+    width: 70%;
+    padding: 0.2em 0.5em;
+    margin: 1em auto;
 }
 
 li{
@@ -42,10 +45,13 @@ li{
     font-size: 1.2rem;
     line-height: 1.5;
     color: #333;
+    flex-wrap: wrap;
+    margin: 0 1em;
 }
 
 [data-testid="test-profile-card"]{
-    width: 80%;
+    width: 100%;
+    max-width: 1024px;
     margin: 0 auto;
     background-color: #ffdde1;
     padding: 2em;
@@ -60,8 +66,8 @@ li{
 
 [data-testid="test-user-avatar"]{
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
 }
 
@@ -84,6 +90,7 @@ li{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 1em;
+    word-break:keep-all
 }
 
 
@@ -101,6 +108,6 @@ li{
     }
 
     [data-testid="test-profile-card"]{
-        width: 50%;
+        width: 60%;
     }
 }
