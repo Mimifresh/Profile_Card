@@ -71,6 +71,11 @@ li{
 
 }
 
+[data-testid="test-user-social-links"] > a:hover,
+[data-testid="test-user-social-links"] > a:focus{
+    color: #15020c;
+}
+
 [data-testid="test-user-hobbies"], [data-testid="test-user-dislikes"]{
     background-color: #fff0f5;
     padding: 1em 2em;
