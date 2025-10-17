@@ -73,7 +73,7 @@ li{
 
 [data-testid="test-user-social-links"] > a{
     font-size: 2rem;
-    margin: 1rem;
+    margin:  0 1rem;
     text-decoration: none;
     color: #da4453;
 
@@ -82,6 +82,12 @@ li{
 [data-testid="test-user-social-links"] > a:hover,
 [data-testid="test-user-social-links"] > a:focus{
     color: #15020c;
+}
+
+.contact-me{
+    margin-bottom: 0.2em;
+    color: #333;
+    font-weight: bold;
 }
 
 [data-testid="test-user-hobbies"], [data-testid="test-user-dislikes"]{
