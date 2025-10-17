@@ -1,10 +1,103 @@
 body{
     margin: 0;
     font-family: "Inter", sans-serif;
+    padding: 4rem 2rem;
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #fff0f5;
+    
+
 }
 
-.test-user-avatar{
+h2{
+    color: #b91d73;
+}
+
+h3{
+    margin: 0.5em 0;
+    color: #b91d73;
+}
+
+ul{
+    list-style-type:square;
+    padding: 0;
+    margin: 0;
+}
+
+.time-update{
+    background-color: #f2709c;
+    color:#fff;
+    border-radius: 10px;
+}
+
+li{
+    color: #da4453;
+    text-align: start;
+}
+
+[data-testid="test-user-bio"]{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+[data-testid="test-profile-card"]{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffdde1;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+[data-testid="test-user-avatar"]{
     border-radius: 50%;
-    width: 25%;
+    width: 150px;
+    height: 150px;
+}
+
+[data-testid="test-user-social-links"] > a{
+    font-size: 2rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: #da4453;
+
+}
+
+[data-testid="test-user-time"]{
+    background-color:;
+}
+
+[data-testid="test-user-hobbies"], [data-testid="test-user-dislikes"]{
+    background-color: #fff0f5;
+    padding: 1em 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+}
+
+
+@media (min-width: 750px) {
+
+    header{
+       display: flex;
+       align-items: center;
+    }
+
+    .hobbies-and-dislikes{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    [data-testid="test-profile-card"]{
+        width: 50%;
+    }
 }

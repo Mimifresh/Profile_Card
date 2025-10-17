@@ -9,44 +9,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="index.js" defer></script>
 </head>
 <body data-testid="">
-    <article class="" data-testid="test-profilecard">
-        <figure>
-            <img src="images/chinasa.jpg" alt="Avatar of Chinasa" data-testid="test-user-avatar" class="test-user-avatar" >
-            <figcaption data-testid="test-user-avatar-caption"></figcaption>
-        </figure>
-        <div>
-            <h1 data-testid="test-user-name">Chukwu Miracle Chinasa</h1>
-            <p data-testid="test-user-bio"></p>
-        </div>
-        <nav>
-            <a href="#" data-testid="test-user-linkedin">LinkedIn</a>
-            <a href="#" data-testid="test-user-github">GitHub</a>
-            <a href="#" data-testid="test-user-twitter">Twitter</a>
-        </nav>
-        <section>
+    <article class="" data-testid="test-profile-card">
+        <header>
+            <figure>
+                <img src="https://i.postimg.cc/N0RqzrJ7/chinasa.jpg" alt="Avatar of Chinasa" data-testid="test-user-avatar" >
+            </figure>
             <div>
-                <p>Hobbies</p>
+                <h2 aria-label="Chukwu Miracle Chinasa Profile Card" data-testid="test-user-name">Chukwu Miracle Chinasa</h2>
+                <p class="time-update">Time: <span data-testid="test-user-time"></span> (ms)</p>
+            </div>
+        </header>
+            <p data-testid="test-user-bio">FrontEnd Developer building responsive 
+                and interactive web pages with HTML CSS and Javascript</p>
+    
+        <nav data-testid="test-user-social-links">
+            <a href="https://www.linkedin.com/in/chukwu-miracle" target="_blank" data-testid="test-user-linkedin" class="fa-brands fa-linkedin"></a>
+            <a href="https://github.com/Mimifresh" target="_blank" data-testid="test-user-github" class="fa-brands fa-github"></a>
+            <a href="https://x.com/chukwumiracle17" target="_blank" data-testid="test-user-twitter" class="fa-brands fa-x-twitter"></a>
+        </nav>
+        <section class="hobbies-and-dislikes">
+            <section data-testid="test-user-hobbies">
+                <h3>Hobbies:</h3>
                 <ul>
-                    <li>Dancing</li>
-                    <li>singing</li>
                     <li>Sleeping</li>
                     <li>Reading</li>
                 </ul>
-            </div>
-            <div>
-                <p>Dislikes</p>
+            </section>
+            <section data-testid="test-user-dislikes">
+                <h3>Dislikes:</h3>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Chicken Head</li>
+                    <li>Being broke</li>
                 </ul>
-            </div>
+            </section>
         </section>
-        
     </article>
 </body>
 </html>
