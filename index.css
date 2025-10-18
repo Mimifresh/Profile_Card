@@ -39,10 +39,11 @@ ul{
 li{
     color: #da4453;
     text-align: start;
+    font-size: 0.8rem;
 }
 
 [data-testid="test-user-bio"]{
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     color: #333;
     flex-wrap: wrap;
