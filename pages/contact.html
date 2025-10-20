@@ -9,16 +9,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
     <body>
-        <nav>
-            <a href="../index.html" data-testid="test-home-link">&Larr; back to home</a>
-            <a href="about.html" data-testid="test-about-link">About Me</a>
-        </nav>
-        <header>
-            <h2>Contact Me</h2>
+        <header class="nagivation-header">
+            <nav class="nave-link">
+                <a href="../index.html" data-testid="test-home-link">&Larr; back to home</a>
+                <a href="about.html" data-testid="test-about-link">About Me</a>
+            </nav>
         </header>
-        <main>
+        <main data-testid="test-profile-card">
+            <p>Contact Me</p>
+            <h2>Get in Touch</h2>
+            <p>If you have any questions, opportunities, or just want to say hello, feel free to reach out to me using the form below:</p>
+            <p>Or just reach out manually <a href="mailto:mimigolld@mail.com">mimigolld@gmail.com</a></p>
             <form data-testid="test-contact-form" action="https://formspree.io/f/mayvlrze" method="POST">
                 <label for="name" data-testid="test-contact-name">Name:</label>
                 <input type="text" id="name" name="name" required data-testid="test-contact-name">

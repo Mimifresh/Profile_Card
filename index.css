@@ -1,14 +1,11 @@
 body{
     margin: 0;
     font-family: "Inter", sans-serif;
-    padding: 4rem 2rem;
+    padding: 0;
+    width: 100%;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
     box-sizing: border-box;
-    background-color: #fff0f5;
-    
-
+    background-color: #fff0f5;   
 }
 
 h2{
@@ -50,8 +47,32 @@ li{
     margin: 0 1em;
 }
 
+
+.nagivation-header{
+    background-color: #fff0f5;
+    padding: 1em 0;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nave-link{
+    width: 80%;
+    max-width: 1024px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
 [data-testid="test-profile-card"]{
-    width: 100%;
+    width: 80%;
     max-width: 1024px;
     margin: 0 auto;
     background-color: #ffdde1;
@@ -81,6 +102,17 @@ li{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/**---------Navigation Links-------------**/
+.nave-link > a{
+    background-color: #fff0f5;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #da4453;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+
 [data-testid="test-user-social-links"] > a{
     font-size: 2rem;
     margin:  0 1rem;
@@ -109,6 +141,12 @@ li{
     word-break:keep-all
 }
 
+
+/**---------Forms-------------**/
+
+
+
+/**---------Media Queries-------------**/
 
 @media (min-width: 750px) {
 
