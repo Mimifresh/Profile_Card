@@ -45,7 +45,7 @@ if (timeStamp){
                 {element: nameInput, err: nameErrorId, msg: 'Enter your name (min 3 chars).'},
                 {element: emailInput, err: emailError, msg: 'Enter a valid email e.g yourname@mail.com.'},
                 {element: subjectInput, err: subjectError, msg: 'Add a subject.'},
-                {element: messageInput, err: messageError, msg: 'Write a message.'}
+                {element: messageInput, err: messageError, msg: 'Write a message (atleast 10 characters).'}
             ];
 
             let allValid = true;
@@ -62,12 +62,19 @@ if (timeStamp){
 
             if (!allValid) {
                 const firstInvalid = contactForm.querySelector('.invalid');
-                firstInvalid?.focus();
+                if (firstInvalid) firstInvalid.focus();
                 return;
             }
+            if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') {
+                contactForm.requestSubmit();
+                return;}
         const formData = new FormData(contactForm);
         const name = formData.get('name');
         contactForm.reset();
+        contactForm.style.display = 'none';
+
+        document.getElementById('form-success-message').innerHTML = `Thank you, ${name}. Your message has been sent successfully!`;
+
     });
         contactForm.querySelectorAll('input, textarea').forEach(element => {
             const errEl = document.getElementById((element.id || element.name) + '-error');
