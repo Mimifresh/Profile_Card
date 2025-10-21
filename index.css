@@ -95,9 +95,10 @@ li{
 }
 
 [data-testid="test-about-bio"] > img{
+    display: none;
     width: 200px;
     border-radius: 15%;
-    border: 4px solid #da4453;
+    border: 4px solid #f4eeef;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -132,7 +133,12 @@ li{
     font-weight: bold;
 }
 
-[data-testid="test-user-hobbies"], [data-testid="test-user-dislikes"]{
+
+[data-testid="test-user-hobbies"], [data-testid="test-user-dislikes"], 
+[data-testid="test-about-goals"],
+[data-testid="test-about-confidence"],
+[data-testid="test-about-future-note"],
+[data-testid="test-about-extra"]{
     background-color: #fff0f5;
     padding: 1em 2em;
     border-radius: 10px;
@@ -141,9 +147,33 @@ li{
     word-break:keep-all
 }
 
+.other-about{
+    background-color: #fff;
+    padding: 0 3em;
+}
+
+[data-testid="test-contact-form"]{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 80%;
+    margin: 0 auto;
+}
 
 /**---------Forms-------------**/
+input.invalid,
+textarea.invalid {
+    border: 2px solid #da4453;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(218,68,83,0.08);
+}
 
+span[aria-live] {
+    color: #da4453;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 0.25rem;
+}
 
 
 /**---------Media Queries-------------**/
@@ -163,5 +193,22 @@ li{
 
     [data-testid="test-profile-card"]{
         width: 60%;
+    }
+
+    
+    .other-about{
+        display: flex;
+        justify-content: center;
+    }
+
+    [data-testid="test-about-bio"]{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+    }
+
+    [data-testid="test-about-bio"] > img{
+        display: block;
     }
 }
