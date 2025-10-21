@@ -182,18 +182,9 @@ li{
 
 .other-about{
     background-color: #fff;
-    padding: 0 3em;
 }
 
 /**---------Contact me-------------**/
-.contact-me{
-    background-color: #f2709c;
-    color:#fff;
-    border-radius: 10px;
-    width: fit-content;
-    padding: 0.2em 0.5em;
-
-}
 
 .contact-card{
     background-color: #ffdde1;
@@ -327,6 +318,7 @@ span[aria-live] {
         justify-content: center;
         align-items: center;
         gap: 8rem;
+        
     }
 
     [data-testid="test-about-bio"] > img{
@@ -346,5 +338,18 @@ span[aria-live] {
     .get-intouch{
         font-size: 2rem;
     }
- 
+
+    [data-testid="test-about-bio"] > div{
+        width: 40%;
+        
+    }
+
+    .about-sections{
+        text-align: center;
+        padding: 2em 4em;
+    }
+    .about-sections h4{
+        text-align: left;
+
+    }
 }
