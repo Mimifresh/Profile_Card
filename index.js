@@ -65,9 +65,10 @@ if (timeStamp){
                 if (firstInvalid) firstInvalid.focus();
                 return;
             }
-            if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') {
+            if (event.key === 'Enter' && event.target.tagName !== 'TEXTAREA') {
                 contactForm.requestSubmit();
-                return;}
+                return;
+            }
         const formData = new FormData(contactForm);
         const name = formData.get('name');
         contactForm.reset();
